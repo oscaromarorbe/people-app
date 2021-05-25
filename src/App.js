@@ -2,13 +2,9 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import axios from "axios";
-import reducer from "./reducer/reducer";
 import initialState from "./store/initialState";
 import initializeStore from "./store/store";
 import CardsList from "./components/CardsList";
-import SearchForm from "./components/SearchForm";
 
 const store = initializeStore(initialState);
 
@@ -30,7 +26,6 @@ const App = () => {
             Learn React
           </a>
         </header> */}
-        {/* <SearchForm /> */}
         <CardsList />
       </div>
     </Provider>
